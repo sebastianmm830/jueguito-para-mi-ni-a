@@ -7,22 +7,43 @@ let player = { x:canvas.width/2, y:canvas.height-100, r:35, vx:0 };
 let petals = [], starsFalling = [], hearts = [];
 let score=0, final=false, started=false;
 
+// Mensajes de amor
 const messages = [
-  "💖 Emily, eres mi luz en la oscuridad 💖",
-  "🌹 Cada día contigo es un regalo 🌹",
-  "✨ Mi corazón brilla por ti ✨",
-  "💍 Eres mi presente y mi futuro 💍",
-  "❤️ Te amo con todo mi corazón ❤️"
+  "Eres la razón de mi sonrisa 💕",
+  "Cada rosa es un beso para ti 😘",
+  "Te amo más que ayer y menos que mañana 💖",
+  "Mi corazón late solo por ti ❤️",
+  "Eres mi sueño hecho realidad 🌹",
+  "Tus ojos iluminan mi universo ✨",
+  "Quiero estar contigo por siempre 💍",
+  "Tu amor es mi mayor regalo 🎁",
+  "Eres mi princesa hermosa 👑",
+  "Gracias por existir en mi vida 🙏",
+  "Cada día contigo es un milagro ✨",
+  "Cuando sonríes, el mundo se ilumina 🌞",
+  "No hay distancia que pueda separarnos 💌",
+  "Eres el sol en mis días nublados ☀️",
+  "Mi vida tiene sentido gracias a ti 💞",
+  "No necesito nada más, solo a ti 💫",
+  "Tus abrazos son mi refugio favorito 🤗",
+  "Quiero envejecer a tu lado 👵👴",
+  "Eres mi persona favorita en todo el universo 🌌",
+  "Si pudiera pedir un deseo, pediría vivir contigo mil vidas ✨",
+  "Tu voz es la melodía que calma mi corazón 🎶",
+  "Cada momento contigo es inolvidable 📸",
+  "Eres la dueña de mis pensamientos 💭",
+  "Mi corazón solo late con tu nombre 💓",
+  "Eres mi amor eterno, mi todo, mi siempre 💍"
 ];
 const letter = `
-Querida Emily,
+Querida shiquita de papi,
 
 Cada rosa que atrapas en este juego representa
 un latido de mi corazón. Estoy agradecido
 por cada momento contigo. Eres mi amor eterno.
 
 Con todo mi amor,
-Tu persona especial 💖
+Sebastian 💖
 `;
 
 const music = document.getElementById("music");
