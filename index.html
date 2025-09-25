@@ -4,9 +4,67 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Amor para Emily 💖</title>
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Amor para Emily 💖">
+
+<style>
+/* Corazón pixelado */
+#heart-icon {
+  display: grid;
+  grid-template-columns: repeat(8, 1em);
+  grid-template-rows: repeat(8, 1em);
+  gap: 0;
+  width: 8em;
+  height: 8em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: heartbeat 1s infinite;
+}
+
+/* Colores de cada "pixel" */
+#heart-icon div {
+  width: 1em;
+  height: 1em;
+}
+
+/* Define el patrón del corazón en 8x8 */
+.pixel-red { background: #FF0000; }
+.pixel-pink { background: #FF69B4; }
+.pixel-empty { background: transparent; }
+
+@keyframes heartbeat {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  25%, 75% { transform: translate(-50%, -50%) scale(1.3); }
+  50% { transform: translate(-50%, -50%) scale(1); }
+}
+</style>
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div id="heart-icon">
+  <!-- Fila 1 -->
+  <div class="pixel-empty"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-empty"></div><div class="pixel-empty"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-empty"></div>
+  <!-- Fila 2 -->
+  <div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div>
+  <!-- Fila 3 -->
+  <div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div>
+  <!-- Fila 4 -->
+  <div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div>
+  <!-- Fila 5 -->
+  <div class="pixel-empty"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-empty"></div>
+  <!-- Fila 6 -->
+  <div class="pixel-empty"></div><div class="pixel-empty"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-empty"></div><div class="pixel-empty"></div>
+  <!-- Fila 7 -->
+  <div class="pixel-empty"></div><div class="pixel-empty"></div><div class="pixel-empty"></div><div class="pixel-red"></div><div class="pixel-red"></div><div class="pixel-empty"></div><div class="pixel-empty"></div><div class="pixel-empty"></div>
+  <!-- Fila 8 -->
+  <div class="pixel-empty"></div><div class="pixel-empty"></div><div class="pixel-empty"></div><div class="pixel-empty"></div><div class="pixel-red"></div><div class="pixel-empty"></div><div class="pixel-empty"></div><div class="pixel-empty"></div>
+</div>
+
 <canvas id="game"></canvas>
 <div id="score">Rosas: 0</div>
 <div id="nextMsg">Próximo mensaje: 100</div>
